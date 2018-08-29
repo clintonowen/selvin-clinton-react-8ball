@@ -20,7 +20,7 @@ class EightBall extends Component {
   render() {
     return (
       <div>
-        <Button onClick={e => {
+        <Button className="button" onClick={e => {
           this.setState({
             phraseNum: null,
             shaker: "eightBallRest shake"
