@@ -7,7 +7,7 @@ class EightBall extends Component {
     super(props);
     this.state = {
       phraseNum : null,
-      shaker: "eightBallRest",
+      shaker: "ball",
     }
   }
 
@@ -19,57 +19,51 @@ class EightBall extends Component {
 
   render() {
     return (
-      <div>
+      <div className="eightBall">
+
         <Button className="button" onClick={e => {
           this.setState({
             phraseNum: null,
-            shaker: "eightBallRest shake"
+            shaker: "ball shake"
           });
           setTimeout(() => {
             this.setState({
-              shaker: "eightBallRest"
+              shaker: "ball"
             });
             this.setPhraseNum();
-          }, 2500);
+          }, 1500);
         }} />
 
         <div className={this.state.shaker}>
           <Phrase phrase={EightBall.PHRASES[this.state.phraseNum]} />
         </div>
+        
       </div>
     );
   }
-  
+
 }
+
 EightBall.PHRASES = [
-  'Signs point to yes.',
+  'Yeah, and I\'m the Pope.',
   'Sadly, yes.',
-  'Ask The Internet.',
-  'Without a doubt.',
-  'My sources say no.',
-  'As I see it, yes.',
-  'You may rely on it.',
-  'Concentrate and ask again.',
+  'Ask the Internet.',
+  'Dumb question. Ask another.',
+  'Whatever.',
   'Jesus Christ! I hope not!',
-  'It is decidedly so.',
-  'Better not tell you...ever!',
-  'Very doubtful.',
-  'Yes, but do it drunk A.F.',
-  'It is certain.',
-  'Cannot predict now.',
-  'Don\'t swipe right, it\'s your cousin.',
-  'WHAT DO YOU WANT TO HEAR?',
+  'Better not tell you... ever!',
+  'Yes, but do it drunk AF.',
+  'WHAT DO YOU WANT TO HEAR?!',
   'My reply is Hell No.',
-  'Do swipe right, it\'s your hot cousin!',
+  'You\'re being a little extra right now.',
   'Don\'t count on it.',
-  'Seek Help',
-  'Now You\'re Obsessing',
-  'All Signs Point To Me Not Giving A S**t',
+  'Seek help.',
+  'Now you\'re obsessing.',
+  'All signs point to me not giving a s**t.',
   'Just Google it!',
   'You\'re not shaking it hard enough!',
-  '404 Error fool!',
+  '404 Not Found',
   'Don\'t ask me!'
 ];
-
 
 export default EightBall;
