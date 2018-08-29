@@ -52,7 +52,7 @@ EightBall.PHRASES = [
   'Concentrate and ask again.',
   'Jesus Christ! I hope not!',
   'It is decidedly so.',
-  'Better not tell you now.',
+  'Better not tell you...ever!',
   'Very doubtful.',
   'Yes, but do it drunk A.F.',
   'It is certain.',
@@ -67,7 +67,7 @@ EightBall.PHRASES = [
   'All Signs Point To Me Not Giving A S**t',
   'Just Google it!',
   'You\'re not shaking it hard enough!',
-  '404 Error!',
+  '404 Error fool!',
   'Don\'t ask me!'
 ];
 
