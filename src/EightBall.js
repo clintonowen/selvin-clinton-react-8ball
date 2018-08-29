@@ -30,7 +30,7 @@ class EightBall extends Component {
               shaker: "eightBallRest"
             });
             this.setPhraseNum();
-          }, 2000);
+          }, 2500);
         }} />
 
         <div className={this.state.shaker}>
@@ -43,25 +43,32 @@ class EightBall extends Component {
 }
 EightBall.PHRASES = [
   'Signs point to yes.',
-  'Yes.',
-  'Reply hazy, try again.',
+  'Sadly, yes.',
+  'Ask The Internet.',
   'Without a doubt.',
   'My sources say no.',
   'As I see it, yes.',
   'You may rely on it.',
   'Concentrate and ask again.',
-  'Outlook not so good.',
+  'Jesus Christ! I hope not!',
   'It is decidedly so.',
   'Better not tell you now.',
   'Very doubtful.',
-  'Yes - definitely.',
+  'Yes, but do it drunk A.F.',
   'It is certain.',
   'Cannot predict now.',
-  'Most likely.',
-  'Ask again later.',
-  'My reply is no.',
-  'Outlook good.',
-  'Don\'t count on it.'
+  'Don\'t swipe right, it\'s your cousin.',
+  'WHAT DO YOU WANT TO HEAR?',
+  'My reply is Hell No.',
+  'Do swipe right, it\'s your hot cousin!',
+  'Don\'t count on it.',
+  'Seek Help',
+  'Now You\'re Obsessing',
+  'All Signs Point To Me Not Giving A S**t',
+  'Just Google it!',
+  'You\'re not shaking it hard enough!',
+  '404 Error!',
+  'Don\'t ask me!'
 ];
 
 
