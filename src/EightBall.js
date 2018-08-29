@@ -6,21 +6,36 @@ class EightBall extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      phraseNum : null
-
+      phraseNum : null,
+      shaker: "eightBallRest",
     }
   }
+
   setPhraseNum () {
     this.setState({
       phraseNum : Math.floor(Math.random() * ((EightBall.PHRASES.length - 1)))
     });
   }
+
   render() {
     return (
-      
-      <div className="eightBallRest">
-        <Button onClick={e => this.setPhraseNum()} />
-        <Phrase phrase={EightBall.PHRASES[this.state.phraseNum]} />
+      <div>
+        <Button onClick={e => {
+          this.setState({
+            phraseNum: null,
+            shaker: "eightBallRest shake"
+          });
+          setTimeout(() => {
+            this.setState({
+              shaker: "eightBallRest"
+            });
+            this.setPhraseNum();
+          }, 2000);
+        }} />
+
+        <div className={this.state.shaker}>
+          <Phrase phrase={EightBall.PHRASES[this.state.phraseNum]} />
+        </div>
       </div>
     );
   }
